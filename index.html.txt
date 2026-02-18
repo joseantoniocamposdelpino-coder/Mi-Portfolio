@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio | Desarrollador Jr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilo extra para que el scroll sea suave al hacer clic en los enlaces */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-normal">
+
+    <nav class="p-6 flex justify-between items-center max-w-4xl mx-auto">
+        <h1 class="text-xl font-bold tracking-tighter">MINIMAL.DEV</h1>
+        <div class="space-x-4 text-sm font-medium text-gray-500">
+            <a href="#proyectos" class="hover:text-black transition">Proyectos</a>
+            <a href="#sobre-mi" class="hover:text-black transition">Sobre mí</a>
+            <a href="mailto:tuemail@ejemplo.com" class="hover:text-black transition">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto py-20 px-6">
+        <h2 class="text-5xl font-extrabold mb-4 tracking-tight">
+            Hola, soy <span class="text-blue-600">[Tu Nombre]</span>.
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl">
+            Desarrollador en formación apasionado por crear soluciones digitales 
+            limpias, funcionales y minimalistas. Aprendiendo algo nuevo cada día.
+        </p>
+        <div class="mt-8">
+            <a href="https://github.com/tu-usuario" target="_blank" 
+               class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
+                Ver mi GitHub
+            </a>
+        </div>
+    </header>
+
+    <section id="proyectos" class="max-w-4xl mx-auto py-20 px-6">
+        <h3 class="text-2xl font-bold mb-10 border-b pb-2">Proyectos destacados</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition bg-white">
+                <span class="text-xs font-bold text-blue-500 uppercase">Personal</span>
+                <h4 class="text-xl font-bold mt-2">DevPulse</h4>
+                <p class="text-gray-600 mt-2 text-sm italic">
+                    Dashboard minimalista para programadores. (En desarrollo)
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">HTML</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Tailwind</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">JS</span>
+                </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition bg-white">
+                <span class="text-xs font-bold text-green-500 uppercase">Práctica</span>
+                <h4 class="text-xl font-bold mt-2">Calculadora Web</h4>
+                <p class="text-gray-600 mt-2 text-sm">
+                    Mi primer proyecto interactivo usando lógica matemática básica.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">HTML</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">CSS</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="bg-white py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-2xl font-bold mb-6">Mi camino en la tecnología</h3>
+            <p class="text-gray-600 mb-4">
+                Empecé mi viaje en la programación porque [cuéntanos tu motivo, ej: me encanta resolver acertijos]. 
+                Actualmente me enfoco en dominar los fundamentos de la web.
+            </p>
+            <p class="text-gray-600 font-semibold italic">
+                "El código limpio siempre parece que fue escrito por alguien a quien le importa."
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 [Tu Nombre]. Hecho con paciencia y código.</p>
+    </footer>
+
+</body>
+</html>
