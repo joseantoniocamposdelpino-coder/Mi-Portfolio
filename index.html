@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Antonio Campos | Developer & Electronics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Sincronización de modo oscuro (como una memoria compartida)
+        if (localStorage.getItem('temaOscuro') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-500 font-sans">
+
+    <div class="max-w-4xl mx-auto p-6 md:p-16">
+        
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-16">
+            <div class="flex-1">
+                <h1 class="text-5xl font-black tracking-tighter mb-2">JOSE ANTONIO <span class="text-blue-600">CAMPOS</span></h1>
+                <p class="text-xl font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">Desarrollador & Técnico en Electrónica</p>
+                <div class="flex gap-4 mt-4 text-sm font-bold">
+                    <span class="bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full">Python</span>
+                    <span class="bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 px-3 py-1 rounded-full">Arduino</span>
+                    <span class="bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-300 px-3 py-1 rounded-full">JavaScript</span>
+                </div>
+            </div>
+            
+            <a href="dashboard.html" class="group relative inline-flex items-center gap-2 bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-2xl font-black transition-all hover:scale-105 active:scale-95 shadow-xl">
+                VER DASHBOARD PRO
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <section class="space-y-8">
+                <div>
+                    <h2 class="text-xs font-black text-blue-600 uppercase tracking-[0.3em] mb-4 text-left">Sobre mí</h2>
+                    <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+                        Especialista en sistemas electrónicos con pasión por el código. Mi enfoque une la precisión del hardware con la flexibilidad del desarrollo web moderno. 
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xs font-black text-blue-600 uppercase tracking-[0.3em] mb-4 text-left">Experiencia Principal</h2>
+                    <div class="border-l-2 border-slate-200 dark:border-slate-700 pl-6 space-y-6">
+                        <div>
+                            <h3 class="font-black text-lg">Desarrollo de Sistemas Embebidos</h3>
+                            <p class="text-sm text-slate-500">Arduino / Microcontroladores</p>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-lg">Automatización con Python</h3>
+                            <p class="text-sm text-slate-500">Scripts de optimización y control</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-slate-800 p-8 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-700">
+                <h2 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-8 text-center">Stack Tecnológico</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2 text-sm font-bold">
+                            <span>Lógica de Programación (Python)</span>
+                            <span class="text-blue-600">90%</span>
+                        </div>
+                        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                            <div class="bg-blue-600 h-full w-[90%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2 text-sm font-bold">
+                            <span>Electrónica e IoT</span>
+                            <span class="text-green-600">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                            <div class="bg-green-600 h-full w-[85%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2 text-sm font-bold">
+                            <span>Web Frontend (Tailwind/JS)</span>
+                            <span class="text-amber-600">70%</span>
+                        </div>
+                        <div class="w-full bg-slate-100 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                            <div class="bg-amber-600 h-full w-[70%]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-slate-100 dark:border-slate-700">
+                    <p class="text-xs text-center text-slate-400 font-medium">
+                        "El hardware es lo que hace que una máquina sea rápida; el software es lo que hace que una máquina sea inteligente."
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between gap-6">
+            <div class="flex gap-6">
+                <a href="#" class="text-sm font-bold hover:text-blue-600 transition">GitHub</a>
+                <a href="#" class="text-sm font-bold hover:text-blue-600 transition">LinkedIn</a>
+                <a href="mailto:tuemail@ejemplo.com" class="text-sm font-bold hover:text-blue-600 transition">Email</a>
+            </div>
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">© 2026 Jose Antonio Campos</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
